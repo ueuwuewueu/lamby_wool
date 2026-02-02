@@ -1,0 +1,28 @@
+
+/* ====== BREADCRUMBS ====== */
+.breadcrumbs {
+    font-size: 14px;
+    margin: 24px 0;
+    padding: 10px 0px;
+    border-bottom: 1px solid #e5e5e5;
+
+}
+
+.breadcrumbs ol {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+
+.breadcrumbs li::after {
+    content: "—";
+    margin-left: 8px;
+}
+
+.breadcrumbs li:last-child::after {
+    content: "";
+}
+
+.breadcrumbs a {
+    color: #8b6f5a;
+}

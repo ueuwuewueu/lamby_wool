@@ -1,0 +1,717 @@
+@media (max-width: 480px) {
+    .header__inner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        padding: 0 16px;
+        gap: 8px;
+    }
+
+    .logo {
+        flex-shrink: 0;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .header-actions {
+        display: flex;
+        gap: 0px;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 0;
+        display: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        z-index: 1000;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .nav__link {
+        font-size: 12px;
+        padding: 10px 14px;
+        width: 100%;
+    }
+
+    .nav__item.has-dropdown .dropdown {
+        position: static;
+        display: none;
+        box-shadow: none;
+        background: none;
+        padding-left: 16px;
+    }
+
+    .nav__item.has-dropdown.active .dropdown {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .hero__image {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    .hero__content {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .hero__content h1 {
+        width: 210px;
+        margin-top: 30px;
+        font-size: 20px; 
+        }
+
+    .hero__content p {
+        font-size: 12px; 
+    }
+
+    .hero__actions {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+
+   .hero__actions .btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .about__benefits-grid,
+    .products__grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .about__head h2 {
+        font-size: 18px;
+    }
+
+    .about__head p {
+        font-size: 12px;
+    }
+    .about__benefits-header{
+        flex-direction: column;
+    }
+
+    .about__benefits-header h3 {
+        width: 200px;
+        text-align: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .section-link {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .about__benefits-grid .benefit-card h4 {
+        font-size: 14px;
+    }
+
+    .about__benefits-grid .benefit-card p {
+        font-size: 12px;
+    }
+    .product-card {
+        font-size: 12px;
+    }
+
+    .product-footer {
+        font-size: 12px;
+    }
+
+    .products-section-head {
+        flex-direction: column;
+    }
+
+    .products-section-head h2 {
+        font-size: 18;
+        text-align: center;
+    }
+
+    .products-section-head .section-link {
+        text-align: center;
+    }
+  
+    .master-classes__track img {
+        width: 100%;
+        height: auto;
+    }
+    .master-classes__title {
+        font-size: 18px;
+    }
+
+    .center-text {
+        font-size: 14px;
+    }
+
+    .master-classes__btn {
+        font-size: 12px;
+        padding: 10px 16px;
+    }
+
+
+    .subscribe__content h2 {
+        font-size: 18px;
+    }
+
+    .subscribe__content p {
+        font-size: 14px;
+    }
+
+    .subscribe-form input {
+        font-size: 14px;
+        padding: 12px 14px;
+    }
+
+    .subscribe-form button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .subscribe__inner {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        max-width: 100%;
+        padding: 0 16px;
+    }
+
+    .subscribe-form {
+        flex-direction: column; 
+        gap: 8px;
+    }
+
+    .subscribe-form input {
+        width: 100%;
+    }
+
+    .subscribe-form button {
+        width: 100%;
+    }
+
+    .subscribe__image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .footer__col a {
+        font-size: 12px;
+    }
+
+    .footer__info p {
+        font-size: 12px;
+    }
+
+    .footer__copyright {
+        font-size: 10px;
+    }
+    .footer__inner {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footer__contacts {
+        align-items: flex-start;
+        margin-left: 0;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    
+    .header__burger {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 0;
+        display: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        z-index: 1000;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .nav__link {
+        font-size: 12px;
+        padding: 10px 14px;
+        width: 100%;
+    }
+
+    .nav__item.has-dropdown .dropdown {
+        position: static;
+        display: none;
+        box-shadow: none;
+        background: none;
+        padding-left: 16px;
+    }
+
+    .nav__item.has-dropdown.active .dropdown {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .hero__content h1 {
+        font-size: 24px;
+        width: 450px;
+        margin-top: 100px;
+    }
+    .hero__content p {
+        font-size: 16px;
+        width: 500px;
+        margin-top: 20px;
+    }
+    
+    .logo {
+        margin-left: 80px;
+    }
+
+    .header__inner {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 16px;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .nav__list {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero__content {
+        max-width: 90%;
+        padding: 0 10px;
+    }
+
+    .hero__actions {
+        margin-bottom: 80px;
+    }
+
+    .hero__actions .btn {
+        width: 200px;
+        padding: 10px;
+    }
+
+    .about__benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .products__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .master-classes__track img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .subscribe__inner {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .subscribe__image img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav__list {
+        gap: 10px;
+    }
+
+    .nav__list .nav__link {
+        font-size: 10px;
+    }
+
+
+    .about__benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .products__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .master-classes__track img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .subscribe__inner {
+        flex-direction: row;
+        gap: 40px;
+        text-align: left;
+    }
+
+    .subscribe__image img {
+        width: 400px;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+  /* ШАПКА КАТАЛОГА */
+  .catalog-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .catalog-search {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .catalog-search input {
+    flex: 1;
+  }
+
+  /* ФИЛЬТРЫ */
+  .filters {
+    justify-content: center;
+  }
+
+  .filters .filter {
+    flex: 1 1 calc(50% - 10px);
+    text-align: center;
+  }
+
+  /* СОРТИРОВКА */
+  .sorting {
+    gap: 10px;
+  }
+
+  .sort-btn {
+    text-align: center;
+    padding: 8px 10px;
+  }
+
+  /* ТОВАРЫ */
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+}
+
+/* =====================================================
+   📦 CATALOG PAGE ADAPTIVE
+   ===================================================== */
+
+/* ---------- TABLET & DOWN (≤ 768px) ---------- */
+@media (max-width: 768px) {
+
+  /* 🔹 ШАПКА КАТАЛОГА (Заголовок + Поиск) */
+  .catalog-header {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .catalog-header h1 {
+    text-align: left;
+  }
+
+  .catalog-search {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .catalog-search input {
+    flex: 1;
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .catalog-search button {
+    padding: 10px 14px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  /* 🔹 БЛОК УПРАВЛЕНИЯ */
+  .catalog-controls {
+    gap: 12px;
+  }
+
+  /* 🔹 ФИЛЬТРЫ — компактная сетка */
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .filters .filter {
+    flex: 1 1 calc(33.333% - 8px); /* 3 в ряд */
+    font-size: 12px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    text-align: center;
+  }
+
+  /* 🔹 СОРТИРОВКА В ЛИНИЮ */
+  .sorting {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* к краю, а не по центру */
+    gap: 8px;
+  }
+
+  .sort-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 16px;
+  }
+
+  /* 🔹 СЕТКА ТОВАРОВ */
+  .products {
+    gap: 16px;
+  }
+
+  .product-card {
+    padding: 10px;
+  }
+
+  .product-card h2 {
+    font-size: 14px;
+  }
+
+  .product-desc {
+    font-size: 12px;
+  }
+
+  .product-footer {
+    font-size: 12px;
+  }
+
+  /* 🔹 ПАГИНАЦИЯ */
+  .pagination {
+    gap: 6px;
+  }
+
+  .pagination button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .catalog-page {
+    padding-top: 10px;
+  }
+
+  /* ПОИСК */
+  .catalog-search {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .catalog-search input,
+  .catalog-search button {
+    width: 100%;
+  }
+
+  /* ФИЛЬТРЫ */
+  .filters .filter {
+    flex: 1 1 100%;
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  /* СОРТИРОВКА */
+
+  .sorting {
+    justify-content: flex-start; /* к левому краю, не по центру */
+  }
+
+  .sort-btn {
+    flex: 1 1 calc(50% - 10px); /* по 2 кнопки в строке */
+    text-align: center;
+  }
+
+
+
+  /* ТОВАРЫ */
+  .products {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .product-card {
+    padding: 10px;
+  }
+
+  .product-card h2 {
+    font-size: 14px;
+  }
+
+  .product-desc {
+    font-size: 12px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  /* ПАГИНАЦИЯ */
+  .pagination {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .pagination button {
+    padding: 6px 10px;
+  }
+}
+
+/* ---------- SMALL PHONES (≤ 480px) ---------- */
+@media (max-width: 480px) {
+
+  /* 🔹 ФИЛЬТРЫ — 2 в ряд */
+  .filters .filter {
+    flex: 1 1 calc(50% - 8px);
+  }
+
+  /* 🔹 СОРТИРОВКА компактнее */
+  .sorting {
+    gap: 6px;
+  }
+
+  .sort-btn {
+    text-align: center;
+  }
+
+  /* 🔹 КАРТОЧКИ плотнее */
+  .products {
+    gap: 12px;
+  }
+
+  .product-card {
+    padding: 8px;
+  }
+
+  .product-card h2 {
+    font-size: 13px;
+  }
+
+  .price {
+    font-size: 13px;
+  }
+
+  /* 🔹 Хлебные крошки перенос */
+  .breadcrumbs {
+    flex-wrap: wrap;
+    gap: 4px;
+    font-size: 12px;
+  }
+
+
+}
+
+
+/* ---------- VERY SMALL (≤ 360px) ---------- */
+@media (max-width: 360px) {
+
+  .filters .filter {
+    font-size: 11px;
+    padding: 6px;
+  }
+
+  .sort-btn {
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+
+  .catalog-search input {
+    font-size: 13px;
+  }
+}
+
+
+
+@media (max-width: 380px) {
+
+  .catalog-search input {
+    font-size: 13px;
+  }
+
+  .product-card h2 {
+    font-size: 13px;
+  }
+
+  .filters .filter,
+  .sort-btn {
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+    .scroll-top {
+        right: 16px;
+        bottom: 16px;
+        width: 46px;
+        height: 46px;
+        font-size: 18px;
+    }
+}
