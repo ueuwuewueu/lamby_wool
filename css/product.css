@@ -133,7 +133,7 @@
   white-space: nowrap;
 }
 
-.active {
+.tab .active {
   border: #DD704A;
   background: #DD704A;
   font-weight: 700;

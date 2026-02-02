@@ -166,15 +166,15 @@ input,
 }
 
 .btn-primary {
-    background: #e07a5f;
-    color: #2E2E2E;
+    background: #DD704A;
+    color: #000;
     font-weight: 600;
     font-size: 18px;
 }
 
 .btn-secondary {
     border: 2px solid #e07a5f;
-    color: #2E2E2E;
+    color: #000;
     font-weight: 600;
     font-size: 18px;
 }
@@ -265,7 +265,8 @@ h1, h2, h3 {
     padding: 10px 20px;
     font-size: 14px;
     border-radius: 6px;
-    border: none;
+    background: none;
+    border: 1px solid #000;
     cursor: pointer;
     transition: background 0.2s ease;
 }

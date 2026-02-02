@@ -161,63 +161,66 @@
     <p class="product-color">Цвет — <b>024</b></p>
 
     <div class="product-actions">
-        <div class="quantity">
-        <span class="visually-hidden" id="qty-label"></span>
-            
-        <button class="qty-btn" aria-label="Уменьшить количество">–</button>
-        <label for="quantity" id="qty-label"></label>
-        <input 
-            id="quantity"
-            type="number" 
-            value="1" 
-            min="1"
-        >
-
-        <button class="qty-btn" aria-label="Увеличить количество">+</button>
-        </div>
-
-
+            <div class="quantity">
+                <button class="qty-btn" aria-label="Уменьшить количество">–</button>
+                
+                <label for="quantity" class="visually-hidden">Количество</label>
+                <input 
+                    id="quantity"
+                    type="number" 
+                    value="1" 
+                    min="1"
+                    aria-labelledby="quantity-label"
+                >
+                
+                <button class="qty-btn" aria-label="Увеличить количество">+</button>
+            </div>
       <button class="btn btn-primary add-to-cart" type="button">В корзину</button>
 
     </div>
 
       <!-- Вкладки -->
-  <section class="tabs" role="tablist">
-    <div role="tablist">
-        <button class="tab active"
-        role="tab"
-        aria-selected="true"
-        aria-controls="panel-description"
-        id="tab-description">
+  <section class="tabs" role="tablist" aria-label="Информация о продукте">
+    <button class="tab active"
+            role="tab"
+            aria-selected="true"
+            aria-controls="panel-description"
+            id="tab-description">
         Описание
-        </button>
+    </button>
 
-        <button class="tab"
-        role="tab"
-        aria-selected="false"
-        aria-controls="panel-specs"
-        id="tab-specs">
+    <button class="tab"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-specs"
+            id="tab-specs">
         Характеристики
-        </button>
-        <button class="tab"
-        role="tab"
-        aria-selected="false"
-        aria-controls="panel-reviews"
-        id="tab-rewiews">
+    </button>
+
+    <button class="tab"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-reviews"
+            id="tab-reviews">
         Отзывы
-        </button>
-    </div>
+    </button>
 
-
-    <div class="tab_content" itemprop="description" id="panel-description" role="tabpanel" aria-labelledby="tab-description">
-      WOOLY Cotton один из самых востребованных артикулов в любое время года. 
+    <div class="tab_content" id="panel-description" role="tabpanel" aria-labelledby="tab-description" itemprop="description">
+        WOOLY Cotton один из самых востребованных артикулов в любое время года. 
       Его состав — хлопок и мериносовая шерсть superwash. 
       Идеальное сочетание мягкости и хлопка и нежной мериносовой шерсти. 
       По тактильным ощущениям больше ощущается хлопок, но нитки достаточно теплые. 
       Расцветки меланжевые. 
       Пряжа скручена из белой хлопковой нити и цветной шерстяной нити.
     </div>
-  </section>
+    <div class="tab_content" id="panel-specs" role="tabpanel" aria-labelledby="tab-specs">
+        <!-- характеристики -->
+    </div>
+    <div class="tab_content" id="panel-reviews" role="tabpanel" aria-labelledby="tab-reviews">
+        <!-- отзывы -->
+    </div>
+</section>
+
 
   </div>
 </div>
@@ -244,7 +247,7 @@
         <p class="product-desc">Хлопок с шерстью для одежды и аксессуаров</p>
         <div class="product-footer">
             <span class="price">от 300 ₽ / шт</span>
-            <a href="/products/product.html" class="btn btn-primary small">
+            <a href="/products/product.html" class="btn btn-primary small" aria-label="Перейти к продукту Пряжа Wooly Cotton Performance">
                 <img 
                 src="../images/icons/icon-arrow.svg" 
                 alt="" 
@@ -269,7 +272,7 @@
         <p class="product-desc">Хлопок с шерстью для одежды и аксессуаров</p>
         <div class="product-footer">
             <span class="price">от 300 ₽ / шт</span>
-            <a href="/products/product.html" class="btn btn-primary small">
+            <a href="/products/product.html" class="btn btn-primary small" aria-label="Перейти к продукту Пряжа Wooly Cotton Performance">
                 <img 
                 src="../images/icons/icon-arrow.svg" 
                 alt="" 
@@ -294,7 +297,7 @@
         <p class="product-desc">Хлопок с шерстью для одежды и аксессуаров</p>
         <div class="product-footer">
             <span class="price">от 300 ₽ / шт</span>
-            <a href="/products/product.html" class="btn btn-primary small">
+            <a href="/products/product.html" class="btn btn-primary small" aria-label="Перейти к продукту Пряжа Wooly Cotton Performance">
                 <img 
                 src="../images/icons/icon-arrow.svg" 
                 alt="" 
@@ -319,7 +322,7 @@
         <p class="product-desc">Хлопок с шерстью для одежды и аксессуаров</p>
         <div class="product-footer">
             <span class="price">от 300 ₽ / шт</span>
-            <a href="/products/product.html" class="btn btn-primary small">
+            <a href="/products/product.html" class="btn btn-primary small" aria-label="Перейти к продукту Пряжа Wooly Cotton Performance">
                 <img 
                 src="../images/icons/icon-arrow.svg" 
                 alt="" 
@@ -363,8 +366,8 @@
                         <a href="mailto:lamby_wool@gmail.com">lamby_wool@gmail.com</a>
                     </div>
                 </div>
-                <a href="#subscribe" class="btn btn-primary">Подписаться на email-рассылку</a>
-                <a href="https://www.instagram.com/yourpage" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Наш Instagram</a>
+                <button type="button" class="btn btn-primary">Подписаться на email-рассылку</button>
+                <a href="https://www.instagram.com/yourpage" class="section-link" target="_blank" rel="noopener noreferrer">Наш Instagram</a>
             </div>
 
             <!-- Нижняя линия -->
