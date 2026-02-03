@@ -13,4 +13,4 @@ Disallow: /*&*
 Disallow: /filter/
 Disallow: /search
 
-Sitemap: https://site.ru/sitemap.xml
+Sitemap: https://lambywool.vercel.app/sitemap/xml
